@@ -1,13 +1,13 @@
 //
-//  iOSEncryptDecryptLibDemoUITests.swift
-//  iOSEncryptDecryptLibDemoUITests
+//  iOSComponentDemoUITests.swift
+//  iOSComponentDemoUITests
 //
 //  Created by Prajakta Kiran Patil on 15/07/22.
 //
 
 import XCTest
 
-class iOSEncryptDecryptLibDemoUITests: XCTestCase {
+class iOSComponentDemoUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

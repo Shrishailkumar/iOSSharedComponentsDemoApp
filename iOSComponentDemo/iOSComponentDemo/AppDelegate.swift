@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  iOSEncryptDecryptLibDemo
+//  iOSComponentDemo
 //
 //  Created by Prajakta Kiran Patil on 15/07/22.
 //

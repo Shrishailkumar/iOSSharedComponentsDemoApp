@@ -1,13 +1,13 @@
 //
-//  iOSEncryptDecryptLibDemoUITestsLaunchTests.swift
-//  iOSEncryptDecryptLibDemoUITests
+//  iOSComponentDemoUITestsLaunchTests.swift
+//  iOSComponentDemoUITests
 //
 //  Created by Prajakta Kiran Patil on 15/07/22.
 //
 
 import XCTest
 
-class iOSEncryptDecryptLibDemoUITestsLaunchTests: XCTestCase {
+class iOSComponentDemoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
