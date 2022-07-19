@@ -8,27 +8,44 @@
 import UIKit
 import iOSEncryptDecryptLib
 
-class EncryptDecryptViewController: UIViewController {
+class EncryptDecryptViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passwordtextField: UITextField!
-    
     @IBOutlet weak var authenticateBtn: UIButton!
     @IBOutlet weak var hashBtn: UIButton!
     @IBOutlet weak var encryptBtn: UIButton!
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var decryptBtn: UIButton!
+    
     let classObj = CryptoKitClass(passowrdString: "passowrd")
     var encryptedStr : String!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         statusLbl.isHidden = true
-        
+        passwordtextField.delegate = self
         decryptBtn.isHidden = true
         hashBtn.isHidden = true
         authenticateBtn.isHidden = true
+      //  passwordtextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         // Do any additional setup after loading the view.
     }
+    
+     func textFieldDidChange() {
+         
+        if encryptBtn.titleLabel?.text == "Check Encrypted Password" {
+            decryptBtn.isHidden = true
+            hashBtn.isHidden = true
+            authenticateBtn.isHidden = true
+            encryptBtn.setTitle("Send", for: .normal)
+
+        } else {
+              //  callAlert()
+        }
+         
+    }
+    
     
     @IBAction func authenticateBtnAction(_ sender: Any) {
         
@@ -99,6 +116,15 @@ class EncryptDecryptViewController: UIViewController {
         }
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+      if string.isBackspace {
+        // do something
+          textField.text = ""
+          textFieldDidChange()
+      }
+      return true
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -109,4 +135,10 @@ class EncryptDecryptViewController: UIViewController {
     }
     */
 
+}
+extension String {
+  var isBackspace: Bool {
+    let char = self.cString(using: String.Encoding.utf8)!
+    return strcmp(char, "\\b") == -92
+  }
 }

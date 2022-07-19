@@ -1,0 +1,23 @@
+{
+  "name": "iOSEncryptDecryptLib",
+  "version": "1.0.0",
+  "summary": "This library is used for encryption and decryption",
+  "description": "This library contains all cryptography techniques such as Encryption and decryption, Hashing, Authenticating data, Creating and verifying signature and performing key agreement with the help of apple framework called Cryptokit as well as Encryption and decryption with Commoncrypto",
+  "homepage": "http://EXAMPLE/iOSEncryptDecryptLib",
+  "license": "MIT",
+  "authors": {
+    "PrajaktaZensar": "p.sonawane1@zensar.com"
+  },
+  "source": {
+    "git": "https://github.com/PrajaktaZensar/iOSEncryptDecrypt",
+    "tag": "1.0.0"
+  },
+  "source_files": "iOSEncryptDecryptLib",
+  "exclude_files": "Classes/Exclude",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

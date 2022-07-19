@@ -19,9 +19,10 @@
 		09B200E52885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
 		09B200E62885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
 		09B200E72885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
-		09B200F42885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */; };
-		09B200F52885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49F7F248288569CA00B5825A /* ComponentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F7F247288569CA00B5825A /* ComponentListTableViewCell.swift */; };
+		9310C550197F5BDCC5312D07 /* Pods_iOSComponentDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF024DEB0877177C6626624 /* Pods_iOSComponentDemo.framework */; };
+		D721B1A54554DBF6546ED48F /* Pods_iOSComponentDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB3CAF26DA4C1C7B29FB1D7 /* Pods_iOSComponentDemoTests.framework */; };
+		F1D2EDA1DA5C2AEC9CA765A9 /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39AEAE37DDE00E6B8B5340F /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,38 +40,9 @@
 			remoteGlobalIDString = 090136BB288156D5006166B4;
 			remoteInfo = iOSComponentDemo;
 		};
-		09B200F02885D33A00A690C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 098336F2288325A70080D228;
-			remoteInfo = iOSEncryptDecryptLib;
-		};
-		09B200F22885D33A00A690C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 098336FC288325A70080D228;
-			remoteInfo = iOSEncryptDecryptLibTests;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		09B200F62885D34D00A690C0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				09B200F52885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		090136BC288156D5006166B4 /* iOSComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		090136BF288156D5006166B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		090136C1288156D5006166B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		090136C3288156D5006166B4 /* ComponentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentListViewController.swift; sourceTree = "<group>"; };
@@ -78,14 +50,23 @@
 		090136C8288156D5006166B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		090136CB288156D5006166B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		090136CD288156D5006166B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		090136D2288156D5006166B4 /* iOSComponentDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSComponentDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090136D6288156D5006166B4 /* iOSComponentDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoTests.swift; sourceTree = "<group>"; };
-		090136DC288156D5006166B4 /* iOSComponentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSComponentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090136E0288156D5006166B4 /* iOSComponentDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoUITests.swift; sourceTree = "<group>"; };
 		090136E2288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
-		09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSEncryptDecryptLib.xcodeproj; path = ../../iOSAppServiceComponents/iOSEncryptDecryptLib/iOSEncryptDecryptLib.xcodeproj; sourceTree = "<group>"; };
+		09E0A2352886B3830013B206 /* iOSComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E0A2362886B3830013B206 /* iOSComponentDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSComponentDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E0A2372886B3830013B206 /* iOSComponentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSComponentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6D53D005228BC2EAC30AFD /* Pods-iOSComponentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemo.debug.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemo/Pods-iOSComponentDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1EB3CAF26DA4C1C7B29FB1D7 /* Pods_iOSComponentDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSComponentDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A77D214B7A961E14893316 /* Pods-iOSComponentDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemoTests.release.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemoTests/Pods-iOSComponentDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A779EA8685406FA1F453162 /* Pods-iOSComponentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemo.release.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemo/Pods-iOSComponentDemo.release.xcconfig"; sourceTree = "<group>"; };
 		49F7F247288569CA00B5825A /* ComponentListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentListTableViewCell.swift; sourceTree = "<group>"; };
+		719C36780E412F4B8AA6E14B /* Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E5D8A60354732CEE1E34015 /* Pods-iOSComponentDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemoTests/Pods-iOSComponentDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E6AAFD0531DB1C08DD0D277 /* Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDF024DEB0877177C6626624 /* Pods_iOSComponentDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSComponentDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39AEAE37DDE00E6B8B5340F /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSComponentDemo_iOSComponentDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B200F42885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Frameworks */,
+				9310C550197F5BDCC5312D07 /* Pods_iOSComponentDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D721B1A54554DBF6546ED48F /* Pods_iOSComponentDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1D2EDA1DA5C2AEC9CA765A9 /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,19 +103,12 @@
 				090136BE288156D5006166B4 /* iOSComponentDemo */,
 				090136D5288156D5006166B4 /* iOSComponentDemoTests */,
 				090136DF288156D5006166B4 /* iOSComponentDemoUITests */,
-				090136BD288156D5006166B4 /* Products */,
-				09B200EA2885D33A00A690C0 /* Frameworks */,
+				0A7DB34689702D5E9C97FE7E /* Pods */,
+				C826F8AE4780F61B10879DBB /* Frameworks */,
+				09E0A2352886B3830013B206 /* iOSComponentDemo.app */,
+				09E0A2362886B3830013B206 /* iOSComponentDemoTests.xctest */,
+				09E0A2372886B3830013B206 /* iOSComponentDemoUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		090136BD288156D5006166B4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				090136BC288156D5006166B4 /* iOSComponentDemo.app */,
-				090136D2288156D5006166B4 /* iOSComponentDemoTests.xctest */,
-				090136DC288156D5006166B4 /* iOSComponentDemoUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		090136BE288156D5006166B4 /* iOSComponentDemo */ = {
@@ -175,21 +151,17 @@
 			path = ComponentViewControllers;
 			sourceTree = "<group>";
 		};
-		09B200EA2885D33A00A690C0 /* Frameworks */ = {
+		0A7DB34689702D5E9C97FE7E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */,
+				1C6D53D005228BC2EAC30AFD /* Pods-iOSComponentDemo.debug.xcconfig */,
+				3A779EA8685406FA1F453162 /* Pods-iOSComponentDemo.release.xcconfig */,
+				719C36780E412F4B8AA6E14B /* Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig */,
+				7E6AAFD0531DB1C08DD0D277 /* Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig */,
+				7E5D8A60354732CEE1E34015 /* Pods-iOSComponentDemoTests.debug.xcconfig */,
+				38A77D214B7A961E14893316 /* Pods-iOSComponentDemoTests.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		09B200EC2885D33A00A690C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */,
-				09B200F32885D33A00A690C0 /* iOSEncryptDecryptLibTests.xctest */,
-			);
-			name = Products;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		49F7F24628855D5400B5825A /* ComponentList */ = {
@@ -201,6 +173,16 @@
 			path = ComponentList;
 			sourceTree = "<group>";
 		};
+		C826F8AE4780F61B10879DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDF024DEB0877177C6626624 /* Pods_iOSComponentDemo.framework */,
+				F39AEAE37DDE00E6B8B5340F /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework */,
+				1EB3CAF26DA4C1C7B29FB1D7 /* Pods_iOSComponentDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,10 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 090136E6288156D5006166B4 /* Build configuration list for PBXNativeTarget "iOSComponentDemo" */;
 			buildPhases = (
+				1DAC04F26B0AAC3299F520EA /* [CP] Check Pods Manifest.lock */,
 				090136B8288156D5006166B4 /* Sources */,
 				090136B9288156D5006166B4 /* Frameworks */,
 				090136BA288156D5006166B4 /* Resources */,
-				09B200F62885D34D00A690C0 /* Embed Frameworks */,
+				19CF014A2A24C8D14A915AF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,13 +202,14 @@
 			);
 			name = iOSComponentDemo;
 			productName = iOSComponentDemo;
-			productReference = 090136BC288156D5006166B4 /* iOSComponentDemo.app */;
+			productReference = 09E0A2352886B3830013B206 /* iOSComponentDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		090136D1288156D5006166B4 /* iOSComponentDemoTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 090136E9288156D5006166B4 /* Build configuration list for PBXNativeTarget "iOSComponentDemoTests" */;
 			buildPhases = (
+				F8AAC15E2F6789EF5353BE8D /* [CP] Check Pods Manifest.lock */,
 				090136CE288156D5006166B4 /* Sources */,
 				090136CF288156D5006166B4 /* Frameworks */,
 				090136D0288156D5006166B4 /* Resources */,
@@ -237,16 +221,18 @@
 			);
 			name = iOSComponentDemoTests;
 			productName = iOSComponentDemoTests;
-			productReference = 090136D2288156D5006166B4 /* iOSComponentDemoTests.xctest */;
+			productReference = 09E0A2362886B3830013B206 /* iOSComponentDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		090136DB288156D5006166B4 /* iOSComponentDemoUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 090136EC288156D5006166B4 /* Build configuration list for PBXNativeTarget "iOSComponentDemoUITests" */;
 			buildPhases = (
+				5B6F0DB0E1DE50E40CB5327A /* [CP] Check Pods Manifest.lock */,
 				090136D8288156D5006166B4 /* Sources */,
 				090136D9288156D5006166B4 /* Frameworks */,
 				090136DA288156D5006166B4 /* Resources */,
+				0CDE7DBF7F87E5CFAE64CF9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,7 +241,7 @@
 			);
 			name = iOSComponentDemoUITests;
 			productName = iOSComponentDemoUITests;
-			productReference = 090136DC288156D5006166B4 /* iOSComponentDemoUITests.xctest */;
+			productReference = 09E0A2372886B3830013B206 /* iOSComponentDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -290,14 +276,8 @@
 				Base,
 			);
 			mainGroup = 090136B3288156D4006166B4;
-			productRefGroup = 090136BD288156D5006166B4 /* Products */;
+			productRefGroup = 090136B3288156D4006166B4;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 09B200EC2885D33A00A690C0 /* Products */;
-					ProjectRef = 09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				090136BB288156D5006166B4 /* iOSComponentDemo */,
@@ -306,23 +286,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = iOSEncryptDecryptLib.framework;
-			remoteRef = 09B200F02885D33A00A690C0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		09B200F32885D33A00A690C0 /* iOSEncryptDecryptLibTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = iOSEncryptDecryptLibTests.xctest;
-			remoteRef = 09B200F22885D33A00A690C0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		090136BA288156D5006166B4 /* Resources */ = {
@@ -350,6 +313,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CDE7DBF7F87E5CFAE64CF9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19CF014A2A24C8D14A915AF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo/Pods-iOSComponentDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo/Pods-iOSComponentDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo/Pods-iOSComponentDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DAC04F26B0AAC3299F520EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSComponentDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B6F0DB0E1DE50E40CB5327A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSComponentDemo-iOSComponentDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8AAC15E2F6789EF5353BE8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSComponentDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		090136B8288156D5006166B4 /* Sources */ = {
@@ -534,6 +600,7 @@
 		};
 		090136E7288156D5006166B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6D53D005228BC2EAC30AFD /* Pods-iOSComponentDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -562,6 +629,7 @@
 		};
 		090136E8288156D5006166B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A779EA8685406FA1F453162 /* Pods-iOSComponentDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -590,6 +658,7 @@
 		};
 		090136EA288156D5006166B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5D8A60354732CEE1E34015 /* Pods-iOSComponentDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,6 +679,7 @@
 		};
 		090136EB288156D5006166B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A77D214B7A961E14893316 /* Pods-iOSComponentDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,6 +700,7 @@
 		};
 		090136ED288156D5006166B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719C36780E412F4B8AA6E14B /* Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,6 +719,7 @@
 		};
 		090136EE288156D5006166B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6AAFD0531DB1C08DD0D277 /* Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

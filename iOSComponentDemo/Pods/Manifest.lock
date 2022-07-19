@@ -1,0 +1,21 @@
+PODS:
+  - iOSEncryptDecryptLib (1.0.0)
+
+DEPENDENCIES:
+  - iOSEncryptDecryptLib (from `https://github.com/PrajaktaZensar/iOSEncryptDecrypt`)
+
+EXTERNAL SOURCES:
+  iOSEncryptDecryptLib:
+    :git: https://github.com/PrajaktaZensar/iOSEncryptDecrypt
+
+CHECKOUT OPTIONS:
+  iOSEncryptDecryptLib:
+    :commit: 847434665f1c6c27bd1bda4d2e2065a8733a8cf0
+    :git: https://github.com/PrajaktaZensar/iOSEncryptDecrypt
+
+SPEC CHECKSUMS:
+  iOSEncryptDecryptLib: 2cf84484ff54c5efc4da5217d81759a1ad76fb76
+
+PODFILE CHECKSUM: 50659f7ecb0192ed0b4a32a358e41857b4df16eb
+
+COCOAPODS: 1.11.3

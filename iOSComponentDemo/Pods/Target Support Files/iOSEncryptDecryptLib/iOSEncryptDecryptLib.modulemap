@@ -1,0 +1,6 @@
+framework module iOSEncryptDecryptLib {
+  umbrella header "iOSEncryptDecryptLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

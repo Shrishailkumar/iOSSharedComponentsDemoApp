@@ -5,7 +5,7 @@ target 'iOSComponentDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-	pod 'iOSEncryptDecryptLib', :git => 'https://github.com/Shrishailkumar/iOSAppServiceComponents/iOSEncryptDecryptComponent'
+    pod 'iOSEncryptDecryptLib', :git => 'https://github.com/PrajaktaZensar/iOSEncryptDecrypt'
       
   # Pods for iOSComponentDemo
 
