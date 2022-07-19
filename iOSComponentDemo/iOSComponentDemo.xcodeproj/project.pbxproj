@@ -16,6 +16,11 @@
 		090136D7288156D5006166B4 /* iOSComponentDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090136D6288156D5006166B4 /* iOSComponentDemoTests.swift */; };
 		090136E1288156D5006166B4 /* iOSComponentDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090136E0288156D5006166B4 /* iOSComponentDemoUITests.swift */; };
 		090136E3288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090136E2288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift */; };
+		09B200E52885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
+		09B200E62885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
+		09B200E72885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
+		09B200F42885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */; };
+		09B200F52885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49F7F248288569CA00B5825A /* ComponentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F7F247288569CA00B5825A /* ComponentListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +39,35 @@
 			remoteGlobalIDString = 090136BB288156D5006166B4;
 			remoteInfo = iOSComponentDemo;
 		};
+		09B200F02885D33A00A690C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 098336F2288325A70080D228;
+			remoteInfo = iOSEncryptDecryptLib;
+		};
+		09B200F22885D33A00A690C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 098336FC288325A70080D228;
+			remoteInfo = iOSEncryptDecryptLibTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09B200F62885D34D00A690C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09B200F52885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		090136BC288156D5006166B4 /* iOSComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +83,8 @@
 		090136DC288156D5006166B4 /* iOSComponentDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSComponentDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090136E0288156D5006166B4 /* iOSComponentDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoUITests.swift; sourceTree = "<group>"; };
 		090136E2288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
+		09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSEncryptDecryptLib.xcodeproj; path = ../../iOSAppServiceComponents/iOSEncryptDecryptLib/iOSEncryptDecryptLib.xcodeproj; sourceTree = "<group>"; };
 		49F7F247288569CA00B5825A /* ComponentListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B200F42885D34D00A690C0 /* iOSEncryptDecryptLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +121,7 @@
 				090136D5288156D5006166B4 /* iOSComponentDemoTests */,
 				090136DF288156D5006166B4 /* iOSComponentDemoUITests */,
 				090136BD288156D5006166B4 /* Products */,
+				09B200EA2885D33A00A690C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +138,7 @@
 		090136BE288156D5006166B4 /* iOSComponentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09B200E32885BDA900A690C0 /* ComponentViewControllers */,
 				090136BF288156D5006166B4 /* AppDelegate.swift */,
 				090136C1288156D5006166B4 /* SceneDelegate.swift */,
 				49F7F24628855D5400B5825A /* ComponentList */,
@@ -129,6 +167,31 @@
 			path = iOSComponentDemoUITests;
 			sourceTree = "<group>";
 		};
+		09B200E32885BDA900A690C0 /* ComponentViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */,
+			);
+			path = ComponentViewControllers;
+			sourceTree = "<group>";
+		};
+		09B200EA2885D33A00A690C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09B200EC2885D33A00A690C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */,
+				09B200F32885D33A00A690C0 /* iOSEncryptDecryptLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		49F7F24628855D5400B5825A /* ComponentList */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +211,7 @@
 				090136B8288156D5006166B4 /* Sources */,
 				090136B9288156D5006166B4 /* Frameworks */,
 				090136BA288156D5006166B4 /* Resources */,
+				09B200F62885D34D00A690C0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +292,12 @@
 			mainGroup = 090136B3288156D4006166B4;
 			productRefGroup = 090136BD288156D5006166B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09B200EC2885D33A00A690C0 /* Products */;
+					ProjectRef = 09B200EB2885D33A00A690C0 /* iOSEncryptDecryptLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				090136BB288156D5006166B4 /* iOSComponentDemo */,
@@ -236,6 +306,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09B200F12885D33A00A690C0 /* iOSEncryptDecryptLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iOSEncryptDecryptLib.framework;
+			remoteRef = 09B200F02885D33A00A690C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09B200F32885D33A00A690C0 /* iOSEncryptDecryptLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iOSEncryptDecryptLibTests.xctest;
+			remoteRef = 09B200F22885D33A00A690C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		090136BA288156D5006166B4 /* Resources */ = {
@@ -273,6 +360,7 @@
 				49F7F248288569CA00B5825A /* ComponentListTableViewCell.swift in Sources */,
 				090136C0288156D5006166B4 /* AppDelegate.swift in Sources */,
 				090136C2288156D5006166B4 /* SceneDelegate.swift in Sources */,
+				09B200E52885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B200E62885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */,
 				090136D7288156D5006166B4 /* iOSComponentDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				090136E1288156D5006166B4 /* iOSComponentDemoUITests.swift in Sources */,
+				09B200E72885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */,
 				090136E3288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

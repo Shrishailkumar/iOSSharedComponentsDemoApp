@@ -96,6 +96,117 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="82.366071428571431"/>
         </scene>
+        <!--Encrypt Decrypt View Controller-->
+        <scene sceneID="gKT-Sp-SKZ">
+            <objects>
+                <viewController storyboardIdentifier="encryptDecryptViewControllerId" id="Fj8-ju-vnm" customClass="EncryptDecryptViewController" customModule="iOSComponentDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sjJ-RH-zmr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rP-HH-utK">
+                                <rect key="frame" x="65" y="291" width="284" height="300.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6a5-Nm-4KX">
+                                        <rect key="frame" x="0.0" y="23" width="284" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNS-Wm-Ocd">
+                                        <rect key="frame" x="0.0" y="42.5" width="284" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gcB-DE-FNt">
+                                        <rect key="frame" x="59.5" y="89" width="165" height="184"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-JF-399">
+                                                <rect key="frame" x="54" y="0.0" width="57.5" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                                <connections>
+                                                    <action selector="encryptBtnAction:" destination="Fj8-ju-vnm" eventType="touchUpInside" id="eD1-IZ-XSq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-Te-FNk">
+                                                <rect key="frame" x="12" y="51" width="141.5" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Decrypt Password"/>
+                                                <connections>
+                                                    <action selector="decryptBtnAction:" destination="Fj8-ju-vnm" eventType="touchUpInside" id="CA1-Ye-Cey"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6S-Vm-yJp">
+                                                <rect key="frame" x="21" y="102" width="123.5" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Hash Passowrd"/>
+                                                <connections>
+                                                    <action selector="hashFuncAction:" destination="Fj8-ju-vnm" eventType="touchUpInside" id="4Qa-P2-ODQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxf-Nh-Y56">
+                                                <rect key="frame" x="0.0" y="153" width="165" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Authenticate Pasword"/>
+                                                <connections>
+                                                    <action selector="authenticateBtnAction:" destination="Fj8-ju-vnm" eventType="touchUpInside" id="Smz-K3-9B3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqN-AZ-EIi">
+                                        <rect key="frame" x="243" y="45" width="33" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="QNS-Wm-Ocd" firstAttribute="top" secondItem="6a5-Nm-4KX" secondAttribute="bottom" constant="2.5" id="Evm-ln-m5t"/>
+                                    <constraint firstItem="oqN-AZ-EIi" firstAttribute="top" secondItem="6a5-Nm-4KX" secondAttribute="bottom" constant="5" id="FLV-SS-dJt"/>
+                                    <constraint firstAttribute="trailing" secondItem="QNS-Wm-Ocd" secondAttribute="trailing" id="L7g-bv-ZsB"/>
+                                    <constraint firstItem="6a5-Nm-4KX" firstAttribute="top" secondItem="1rP-HH-utK" secondAttribute="top" constant="23" id="Nao-4p-DCB"/>
+                                    <constraint firstAttribute="trailing" secondItem="6a5-Nm-4KX" secondAttribute="trailing" id="PSO-qf-YX9"/>
+                                    <constraint firstItem="gcB-DE-FNt" firstAttribute="top" secondItem="oqN-AZ-EIi" secondAttribute="bottom" constant="28" id="a2N-Lm-v03"/>
+                                    <constraint firstItem="oqN-AZ-EIi" firstAttribute="top" secondItem="QNS-Wm-Ocd" secondAttribute="bottom" constant="1.5" id="ahG-29-CUO"/>
+                                    <constraint firstItem="gcB-DE-FNt" firstAttribute="centerX" secondItem="1rP-HH-utK" secondAttribute="centerX" id="b6C-6D-i4c"/>
+                                    <constraint firstAttribute="trailing" secondItem="oqN-AZ-EIi" secondAttribute="trailing" constant="8" id="c4z-8D-82O"/>
+                                    <constraint firstAttribute="bottom" secondItem="gcB-DE-FNt" secondAttribute="bottom" constant="27.5" id="dPs-Kh-RvE"/>
+                                    <constraint firstItem="6a5-Nm-4KX" firstAttribute="leading" secondItem="1rP-HH-utK" secondAttribute="leading" id="gHi-hX-Arl"/>
+                                    <constraint firstItem="QNS-Wm-Ocd" firstAttribute="leading" secondItem="1rP-HH-utK" secondAttribute="leading" id="pZ6-fj-Qgm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fbs-4E-jE7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1rP-HH-utK" firstAttribute="centerY" secondItem="fbs-4E-jE7" secondAttribute="centerY" constant="-12" id="5ja-2B-cfA"/>
+                            <constraint firstItem="1rP-HH-utK" firstAttribute="centerX" secondItem="fbs-4E-jE7" secondAttribute="centerX" id="G1N-Zt-6U3"/>
+                            <constraint firstItem="1rP-HH-utK" firstAttribute="leading" secondItem="fbs-4E-jE7" secondAttribute="leading" constant="65" id="KjK-fl-ezf"/>
+                            <constraint firstItem="fbs-4E-jE7" firstAttribute="trailing" secondItem="1rP-HH-utK" secondAttribute="trailing" constant="65" id="aIQ-eK-eJY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authenticateBtn" destination="qxf-Nh-Y56" id="rvU-S2-Hna"/>
+                        <outlet property="decryptBtn" destination="Yh2-Te-FNk" id="QPU-mn-Pzt"/>
+                        <outlet property="encryptBtn" destination="lsE-JF-399" id="UFQ-KZ-hou"/>
+                        <outlet property="hashBtn" destination="E6S-Vm-yJp" id="bAI-bf-rlo"/>
+                        <outlet property="passwordtextField" destination="6a5-Nm-4KX" id="Gn2-m5-xBa"/>
+                        <outlet property="statusLbl" destination="oqN-AZ-EIi" id="qsE-oj-6CR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfj-TO-VBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1579.7101449275362" y="82.366071428571431"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gBr-4f-eNE">
             <objects>
@@ -119,6 +230,12 @@
         <image name="arrowIcon" width="600" height="600"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

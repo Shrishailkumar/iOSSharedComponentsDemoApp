@@ -6,7 +6,7 @@
 //
 
 import UIKit
-enum APICountry : String{
+enum APICountry : String {
     case EncryptionDecryption = "Encryption/Decryption"
     case BarcodeScanner = "Barcode Scanner"
     case Geofence = "Geofence"
@@ -46,7 +46,14 @@ extension ComponentListViewController : UITableViewDelegate,UITableViewDataSourc
         return UITableView.automaticDimension
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if componentListArray[indexPath.row] as! String == APICountry.EncryptionDecryption.rawValue {
+                let encryptDecryptView = self.storyboard!.instantiateViewController(withIdentifier: "encryptDecryptViewControllerId") as! EncryptDecryptViewController
+            
+                self.navigationController?.pushViewController(encryptDecryptView, animated: true)
+            }
+        
         
     }
     

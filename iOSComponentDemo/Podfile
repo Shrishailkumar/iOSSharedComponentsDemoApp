@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iOSComponentDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+	pod 'iOSEncryptDecryptLib', :git => 'https://github.com/Shrishailkumar/iOSAppServiceComponents/iOSEncryptDecryptComponent'
+      
+  # Pods for iOSComponentDemo
+
+  target 'iOSComponentDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'iOSComponentDemoUITests' do
+    # Pods for testing
+  end
+
+end
