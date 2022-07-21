@@ -207,6 +207,52 @@
             </objects>
             <point key="canvasLocation" x="1579.7101449275362" y="82.366071428571431"/>
         </scene>
+        <!--Barcode Scanner View Controller-->
+        <scene sceneID="zwF-61-5l4">
+            <objects>
+                <viewController storyboardIdentifier="barcodeScannerViewControllerId" id="n9h-1p-f7H" customClass="BarcodeScannerViewController" customModule="iOSComponentDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X8U-Ju-bI6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tb-tp-TkF" customClass="ZQRScannerView" customModule="ZQRScannerLib">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <viewLayoutGuide key="safeArea" id="FJJ-Tp-exA"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWi-5R-DKE" customClass="FlashButton" customModule="iOSComponentDemo" customModuleProvider="target">
+                                <rect key="frame" x="167" y="742" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="BeD-fj-AJs"/>
+                                    <constraint firstAttribute="height" constant="80" id="X1t-Pu-HlV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="flashCLicked:" destination="n9h-1p-f7H" eventType="touchUpInside" id="TmN-Jd-Nfy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xSo-LK-8Y4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8tb-tp-TkF" firstAttribute="leading" secondItem="xSo-LK-8Y4" secondAttribute="leading" id="5pH-8s-tei"/>
+                            <constraint firstItem="xSo-LK-8Y4" firstAttribute="bottom" secondItem="8tb-tp-TkF" secondAttribute="bottom" id="6dA-rd-wmS"/>
+                            <constraint firstItem="8tb-tp-TkF" firstAttribute="top" secondItem="xSo-LK-8Y4" secondAttribute="top" id="MNC-Tl-nL0"/>
+                            <constraint firstItem="FWi-5R-DKE" firstAttribute="centerX" secondItem="xSo-LK-8Y4" secondAttribute="centerX" id="Qil-g2-jXe"/>
+                            <constraint firstItem="xSo-LK-8Y4" firstAttribute="trailing" secondItem="8tb-tp-TkF" secondAttribute="trailing" id="mWF-ms-7vI"/>
+                            <constraint firstItem="xSo-LK-8Y4" firstAttribute="bottom" secondItem="FWi-5R-DKE" secondAttribute="bottom" constant="40" id="orf-ob-Amd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flashButton" destination="FWi-5R-DKE" id="4my-jh-n38"/>
+                        <outlet property="zqrScannerView" destination="8tb-tp-TkF" id="5kk-O2-X43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ir6-eD-ETO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255.072463768116" y="82.366071428571431"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gBr-4f-eNE">
             <objects>

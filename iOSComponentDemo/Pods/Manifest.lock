@@ -1,21 +1,29 @@
 PODS:
   - iOSEncryptDecryptLib (1.0.0)
+  - ZQRScannerLib (1.0.0)
 
 DEPENDENCIES:
   - iOSEncryptDecryptLib (from `https://github.com/PrajaktaZensar/iOSEncryptDecrypt`)
+  - ZQRScannerLib (from `https://github.com/nagmanisinghzensar/ZenScanner`)
 
 EXTERNAL SOURCES:
   iOSEncryptDecryptLib:
     :git: https://github.com/PrajaktaZensar/iOSEncryptDecrypt
+  ZQRScannerLib:
+    :git: https://github.com/nagmanisinghzensar/ZenScanner
 
 CHECKOUT OPTIONS:
   iOSEncryptDecryptLib:
     :commit: 847434665f1c6c27bd1bda4d2e2065a8733a8cf0
     :git: https://github.com/PrajaktaZensar/iOSEncryptDecrypt
+  ZQRScannerLib:
+    :commit: cf6e9a25af39cc05988b5ae4e4ac4926a4fd5b6c
+    :git: https://github.com/nagmanisinghzensar/ZenScanner
 
 SPEC CHECKSUMS:
   iOSEncryptDecryptLib: 2cf84484ff54c5efc4da5217d81759a1ad76fb76
+  ZQRScannerLib: 53c2916e3f57851a43d3c261cc83ef5d2c3f716b
 
-PODFILE CHECKSUM: 50659f7ecb0192ed0b4a32a358e41857b4df16eb
+PODFILE CHECKSUM: 5f131df54ffd9eed88296b240278d90f4b4c7a0c
 
 COCOAPODS: 1.11.3

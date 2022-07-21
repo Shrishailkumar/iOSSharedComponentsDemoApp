@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-iOSComponentDemo/Pods-iOSComponentDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ZQRScannerLib/ZQRScannerLib.framework
 ${BUILT_PRODUCTS_DIR}/iOSEncryptDecryptLib/iOSEncryptDecryptLib.framework

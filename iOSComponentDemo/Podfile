@@ -6,7 +6,8 @@ target 'iOSComponentDemo' do
   use_frameworks!
 
     pod 'iOSEncryptDecryptLib', :git => 'https://github.com/PrajaktaZensar/iOSEncryptDecrypt'
-      
+    pod 'ZQRScannerLib', :git => 'https://github.com/nagmanisinghzensar/ZenScanner'  
+    
   # Pods for iOSComponentDemo
 
   target 'iOSComponentDemoTests' do

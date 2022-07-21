@@ -16,6 +16,8 @@
 		090136D7288156D5006166B4 /* iOSComponentDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090136D6288156D5006166B4 /* iOSComponentDemoTests.swift */; };
 		090136E1288156D5006166B4 /* iOSComponentDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090136E0288156D5006166B4 /* iOSComponentDemoUITests.swift */; };
 		090136E3288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090136E2288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift */; };
+		097769A22889807500DB88B2 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097769A12889807500DB88B2 /* BarcodeScannerViewController.swift */; };
+		097769A52889824400DB88B2 /* FlashButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097769A42889824400DB88B2 /* FlashButton.swift */; };
 		09B200E52885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
 		09B200E62885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
 		09B200E72885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
@@ -53,6 +55,8 @@
 		090136D6288156D5006166B4 /* iOSComponentDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoTests.swift; sourceTree = "<group>"; };
 		090136E0288156D5006166B4 /* iOSComponentDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoUITests.swift; sourceTree = "<group>"; };
 		090136E2288156D5006166B4 /* iOSComponentDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSComponentDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		097769A12889807500DB88B2 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		097769A42889824400DB88B2 /* FlashButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashButton.swift; sourceTree = "<group>"; };
 		09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
 		09E0A2352886B3830013B206 /* iOSComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E0A2362886B3830013B206 /* iOSComponentDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSComponentDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,7 @@
 		090136BE288156D5006166B4 /* iOSComponentDemo */ = {
 			isa = PBXGroup;
 			children = (
+				097769A32889822800DB88B2 /* BarcodeScannerFile */,
 				09B200E32885BDA900A690C0 /* ComponentViewControllers */,
 				090136BF288156D5006166B4 /* AppDelegate.swift */,
 				090136C1288156D5006166B4 /* SceneDelegate.swift */,
@@ -143,10 +148,19 @@
 			path = iOSComponentDemoUITests;
 			sourceTree = "<group>";
 		};
+		097769A32889822800DB88B2 /* BarcodeScannerFile */ = {
+			isa = PBXGroup;
+			children = (
+				097769A42889824400DB88B2 /* FlashButton.swift */,
+			);
+			path = BarcodeScannerFile;
+			sourceTree = "<group>";
+		};
 		09B200E32885BDA900A690C0 /* ComponentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */,
+				097769A12889807500DB88B2 /* BarcodeScannerViewController.swift */,
 			);
 			path = ComponentViewControllers;
 			sourceTree = "<group>";
@@ -423,7 +437,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				090136C4288156D5006166B4 /* ComponentListViewController.swift in Sources */,
+				097769A52889824400DB88B2 /* FlashButton.swift in Sources */,
 				49F7F248288569CA00B5825A /* ComponentListTableViewCell.swift in Sources */,
+				097769A22889807500DB88B2 /* BarcodeScannerViewController.swift in Sources */,
 				090136C0288156D5006166B4 /* AppDelegate.swift in Sources */,
 				090136C2288156D5006166B4 /* SceneDelegate.swift in Sources */,
 				09B200E52885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */,
@@ -609,6 +625,7 @@
 				DEVELOPMENT_TEAM = YU6WB94747;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSComponentDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required to use this component";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -638,6 +655,7 @@
 				DEVELOPMENT_TEAM = YU6WB94747;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSComponentDemo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is required to use this component";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

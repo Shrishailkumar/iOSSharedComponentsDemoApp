@@ -54,6 +54,12 @@ extension ComponentListViewController : UITableViewDelegate,UITableViewDataSourc
                 self.navigationController?.pushViewController(encryptDecryptView, animated: true)
             }
         
+        if componentListArray[indexPath.row] as! String == APICountry.BarcodeScanner.rawValue {
+                let encryptDecryptView = self.storyboard!.instantiateViewController(withIdentifier: "barcodeScannerViewControllerId") as! BarcodeScannerViewController
+            
+                self.navigationController?.pushViewController(encryptDecryptView, animated: true)
+            }
+        
         
     }
     
