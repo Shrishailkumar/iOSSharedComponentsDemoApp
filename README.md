@@ -32,3 +32,25 @@ Please follow these steps to successfully integrate this using POD.
         
 7. When your viewcontroller disappears then call:
         zqrScannerView.stopRunning()
+     
+        
+# CRYPTOGRAPHICAL OPERATIONS
+We have worked on reusable cryptographical opertaions which are listed below,
+1. Encyrption/Decryption
+2. Hashing
+3. Authenticating 
+
+Please follow these steps to successfully integrate this using POD.
+
+1. In your podfile include: pod 'iOSEncryptDecryptLib', :git => 'https://github.com/PrajaktaZensar/iOSEncryptDecrypt'
+2. In the viewcontroller include import iOSEncryptDecryptLib.
+3. Create object and initilized the class CryptoKitClass in the view controller.
+4. Call AESencryptFunc() in view the controller for encryption.
+        classObject.encryptFunc(passowrdString: yourString)
+5. Call AESencryptFunc() in view the controller for decryption.
+6. Call hashHmacSHA512CryptoKit() in view the controller for authentication.
+7. Call hashSha512CryptoKit() in view the controller for hashing.
+
+
+
+
