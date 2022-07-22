@@ -1,14 +1,20 @@
 PODS:
   - iOSEncryptDecryptLib (1.0.0)
+  - ZDeviceHelper (1.0.0):
+    - ZDeviceHelper/All (= 1.0.0)
+  - ZDeviceHelper/All (1.0.0)
   - ZQRScannerLib (1.0.0)
 
 DEPENDENCIES:
   - iOSEncryptDecryptLib (from `https://github.com/PrajaktaZensar/iOSEncryptDecrypt`)
+  - ZDeviceHelper (from `https://github.com/shekharvishwazensar/ZDeviceHelper`)
   - ZQRScannerLib (from `https://github.com/nagmanisinghzensar/ZenScanner`)
 
 EXTERNAL SOURCES:
   iOSEncryptDecryptLib:
     :git: https://github.com/PrajaktaZensar/iOSEncryptDecrypt
+  ZDeviceHelper:
+    :git: https://github.com/shekharvishwazensar/ZDeviceHelper
   ZQRScannerLib:
     :git: https://github.com/nagmanisinghzensar/ZenScanner
 
@@ -16,14 +22,18 @@ CHECKOUT OPTIONS:
   iOSEncryptDecryptLib:
     :commit: 847434665f1c6c27bd1bda4d2e2065a8733a8cf0
     :git: https://github.com/PrajaktaZensar/iOSEncryptDecrypt
+  ZDeviceHelper:
+    :commit: 7f7b4f7ca67f086a90139e644ecf9a00e4036482
+    :git: https://github.com/shekharvishwazensar/ZDeviceHelper
   ZQRScannerLib:
     :commit: cf6e9a25af39cc05988b5ae4e4ac4926a4fd5b6c
     :git: https://github.com/nagmanisinghzensar/ZenScanner
 
 SPEC CHECKSUMS:
   iOSEncryptDecryptLib: 2cf84484ff54c5efc4da5217d81759a1ad76fb76
+  ZDeviceHelper: 2c42194de933a31fc183d1100c8ea7b526b360b1
   ZQRScannerLib: 53c2916e3f57851a43d3c261cc83ef5d2c3f716b
 
-PODFILE CHECKSUM: 5f131df54ffd9eed88296b240278d90f4b4c7a0c
+PODFILE CHECKSUM: c18e96e682edf6ee6a1b103e0ca66c61e699ef81
 
 COCOAPODS: 1.11.3

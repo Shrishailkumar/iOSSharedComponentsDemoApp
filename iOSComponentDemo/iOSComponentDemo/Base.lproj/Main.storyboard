@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PPy-AB-DrR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PPy-AB-DrR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="82.366071428571431"/>
+            <point key="canvasLocation" x="825" y="82"/>
         </scene>
         <!--Encrypt Decrypt View Controller-->
         <scene sceneID="gKT-Sp-SKZ">
@@ -251,7 +252,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ir6-eD-ETO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2255.072463768116" y="82.366071428571431"/>
+            <point key="canvasLocation" x="2277" y="82"/>
+        </scene>
+        <!--Device Helper View Controller-->
+        <scene sceneID="ajf-lh-np4">
+            <objects>
+                <viewController storyboardIdentifier="zDeviceHelperViewController" id="y4N-uv-BgN" customClass="ZDeviceHelperViewController" customModule="iOSComponentDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6pj-98-RwR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVICE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTa-rI-BOk">
+                                <rect key="frame" x="20" y="104" width="374" height="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KlI-JZ-6fP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WTa-rI-BOk" firstAttribute="top" secondItem="KlI-JZ-6fP" secondAttribute="top" constant="60" id="C5F-QX-r1l"/>
+                            <constraint firstItem="KlI-JZ-6fP" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WTa-rI-BOk" secondAttribute="bottom" constant="20" id="UWN-NS-YTw"/>
+                            <constraint firstItem="WTa-rI-BOk" firstAttribute="leading" secondItem="KlI-JZ-6fP" secondAttribute="leading" constant="20" id="chN-fy-tZ3"/>
+                            <constraint firstItem="KlI-JZ-6fP" firstAttribute="trailing" secondItem="WTa-rI-BOk" secondAttribute="trailing" constant="20" id="m0X-02-jLN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deviceDetailLabel" destination="WTa-rI-BOk" id="nvd-uo-XtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6W7-JW-OzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3000.0000000000005" y="81.696428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gBr-4f-eNE">

@@ -23,6 +23,7 @@
 		09B200E72885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */; };
 		49F7F248288569CA00B5825A /* ComponentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F7F247288569CA00B5825A /* ComponentListTableViewCell.swift */; };
 		9310C550197F5BDCC5312D07 /* Pods_iOSComponentDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF024DEB0877177C6626624 /* Pods_iOSComponentDemo.framework */; };
+		BD275FD6288A97820033B9A0 /* ZDeviceHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD275FD5288A97820033B9A0 /* ZDeviceHelperViewController.swift */; };
 		D721B1A54554DBF6546ED48F /* Pods_iOSComponentDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB3CAF26DA4C1C7B29FB1D7 /* Pods_iOSComponentDemoTests.framework */; };
 		F1D2EDA1DA5C2AEC9CA765A9 /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39AEAE37DDE00E6B8B5340F /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		719C36780E412F4B8AA6E14B /* Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E5D8A60354732CEE1E34015 /* Pods-iOSComponentDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemoTests/Pods-iOSComponentDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E6AAFD0531DB1C08DD0D277 /* Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSComponentDemo-iOSComponentDemoUITests/Pods-iOSComponentDemo-iOSComponentDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD275FD5288A97820033B9A0 /* ZDeviceHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZDeviceHelperViewController.swift; sourceTree = "<group>"; };
 		DDF024DEB0877177C6626624 /* Pods_iOSComponentDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSComponentDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39AEAE37DDE00E6B8B5340F /* Pods_iOSComponentDemo_iOSComponentDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSComponentDemo_iOSComponentDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 			children = (
 				09B200E42885BDD300A690C0 /* EncryptDecryptViewController.swift */,
 				097769A12889807500DB88B2 /* BarcodeScannerViewController.swift */,
+				BD275FD5288A97820033B9A0 /* ZDeviceHelperViewController.swift */,
 			);
 			path = ComponentViewControllers;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				090136C0288156D5006166B4 /* AppDelegate.swift in Sources */,
 				090136C2288156D5006166B4 /* SceneDelegate.swift in Sources */,
 				09B200E52885BDD300A690C0 /* EncryptDecryptViewController.swift in Sources */,
+				BD275FD6288A97820033B9A0 /* ZDeviceHelperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +635,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -661,6 +666,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

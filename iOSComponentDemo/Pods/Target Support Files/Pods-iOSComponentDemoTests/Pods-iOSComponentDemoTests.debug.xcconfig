@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZQRScannerLib" "${PODS_CONFIGURATION_BUILD_DIR}/iOSEncryptDecryptLib"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZDeviceHelper" "${PODS_CONFIGURATION_BUILD_DIR}/ZQRScannerLib" "${PODS_CONFIGURATION_BUILD_DIR}/iOSEncryptDecryptLib"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZQRScannerLib/ZQRScannerLib.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/iOSEncryptDecryptLib/iOSEncryptDecryptLib.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "ZQRScannerLib" -framework "iOSEncryptDecryptLib"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ZDeviceHelper/ZDeviceHelper.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ZQRScannerLib/ZQRScannerLib.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/iOSEncryptDecryptLib/iOSEncryptDecryptLib.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "ZDeviceHelper" -framework "ZQRScannerLib" -framework "iOSEncryptDecryptLib"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

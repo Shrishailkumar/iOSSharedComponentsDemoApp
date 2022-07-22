@@ -6,31 +6,33 @@
 //
 
 import UIKit
-enum APICountry : String {
-    case EncryptionDecryption = "Encryption/Decryption"
-    case BarcodeScanner = "Barcode Scanner"
-    case Geofence = "Geofence"
-    case CameraCapture = "Camera Capture"
-    case UIUtilityComponent = "UI Utility Component"
+enum Components: String {
+    case encryptionDecryption = "Encryption/Decryption"
+    case barcodeScanner = "Barcode Scanner"
+    case geofence = "Geofence"
+    case cameraCapture = "Camera Capture"
+    case uIUtilityComponent = "UI Utility Component"
+    case deviceUtility = "Device Utility"
 }
 
 class ComponentListViewController: UIViewController {
     
+    // MARK: - Properties
+    var componentListArray: NSArray = ["Encryption/Decryption","Barcode Scanner","Geofence","Camera Capture","UI Utility Component","Device Utility"]
+    
+    // MARK: - UI Components
     @IBOutlet weak var componentListTableView: UITableView!
-
-    var componentListArray: NSArray = ["Encryption/Decryption","Barcode Scanner","Geofence","Camera Capture","UI Utility Component"]
-
+    
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         componentListTableView.reloadData()
-        // Do any additional setup after loading the view.
     }
-
-
+    
 }
 
+// MARK: - UITableViewDelegate,UITableViewDataSource
 extension ComponentListViewController : UITableViewDelegate,UITableViewDataSource{
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return componentListArray.count
@@ -47,24 +49,26 @@ extension ComponentListViewController : UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let title = componentListArray[indexPath.row] as? String else { return }
         
-        if componentListArray[indexPath.row] as! String == APICountry.EncryptionDecryption.rawValue {
-                let encryptDecryptView = self.storyboard!.instantiateViewController(withIdentifier: "encryptDecryptViewControllerId") as! EncryptDecryptViewController
+        switch Components(rawValue: title) {
+        case .encryptionDecryption:
+            let encryptDecryptView = self.storyboard!.instantiateViewController(withIdentifier: "encryptDecryptViewControllerId") as! EncryptDecryptViewController
+            self.navigationController?.pushViewController(encryptDecryptView, animated: true)
             
-                self.navigationController?.pushViewController(encryptDecryptView, animated: true)
-            }
-        
-        if componentListArray[indexPath.row] as! String == APICountry.BarcodeScanner.rawValue {
-                let encryptDecryptView = self.storyboard!.instantiateViewController(withIdentifier: "barcodeScannerViewControllerId") as! BarcodeScannerViewController
+        case.barcodeScanner:
+            let encryptDecryptView = self.storyboard!.instantiateViewController(withIdentifier: "barcodeScannerViewControllerId") as! BarcodeScannerViewController
+            self.navigationController?.pushViewController(encryptDecryptView, animated: true)
             
-                self.navigationController?.pushViewController(encryptDecryptView, animated: true)
-            }
-        
+        case.deviceUtility:
+            let deviceHelper = self.storyboard!.instantiateViewController(withIdentifier: "zDeviceHelperViewController") as! ZDeviceHelperViewController
+            self.navigationController?.pushViewController(deviceHelper, animated: true)
+            
+        default:
+            break
+        }
         
     }
     
-    
-    
-   
 }
 

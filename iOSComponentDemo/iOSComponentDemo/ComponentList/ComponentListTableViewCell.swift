@@ -8,21 +8,18 @@ import UIKit
 
 class ComponentListTableViewCell: UITableViewCell {
     
-    
+    // MARK: - UI Components
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var arrowImageView: UIImageView!
     
+    // MARK: - Initializations
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
-    
     
     // Data set up in table view cell
     func setData(listArray:NSArray, indexPath:IndexPath){
